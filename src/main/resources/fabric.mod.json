@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "nfc",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "New Frontier Craft",
+  "description": "A port of NFC to BTA!.",
   "authors": [
-    "Turnip Labs"
+    "LukeisStuff"
   ],
   "contact": {
     "homepage": "",
@@ -19,20 +19,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"luke.nfc.NFCMod"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"luke.nfc.NFCMod"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"luke.nfc.NFCMod"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"luke.nfc.NFCMod"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+    "nfc.mixins.json"
   ],
 
   "depends": {
