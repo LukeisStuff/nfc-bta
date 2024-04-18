@@ -63,6 +63,116 @@ public class NFCBlocks {
 	public static Block oreGoldNetherrack;
 	public static Block oreOnyxNetherrack;
 
+	public static Block oreCobaltStone;
+	public static Block oreCobaltBasalt;
+	public static Block oreCobaltLimestone;
+	public static Block oreCobaltGranite;
+
+	public static Block oreAliminumStone;
+	public static Block oreAliminumBasalt;
+	public static Block oreAliminumLimestone;
+	public static Block oreAliminumGranite;
+
+	public static Block oreCopperStone;
+	public static Block oreCopperBasalt;
+	public static Block oreCopperLimestone;
+	public static Block oreCopperGranite;
+
+	public static Block oreTinStone;
+	public static Block oreTinBasalt;
+	public static Block oreTinLimestone;
+	public static Block oreTinGranite;
+
+	public static Block oreZincStone;
+	public static Block oreZincBasalt;
+	public static Block oreZincLimestone;
+	public static Block oreZincGranite;
+
+	public static Block oreNickelStone;
+	public static Block oreNickelBasalt;
+	public static Block oreNickelLimestone;
+	public static Block oreNickelGranite;
+
+	public static Block oreBismuthStone;
+	public static Block oreBismuthBasalt;
+	public static Block oreBismuthLimestone;
+	public static Block oreBismuthGranite;
+
+	public static Block oreOsmiumStone;
+	public static Block oreOsmiumBasalt;
+	public static Block oreOsmiumLimestone;
+	public static Block oreOsmiumGranite;
+
+	public static Block oreTungstenStone;
+	public static Block oreTungstenBasalt;
+	public static Block oreTungstenLimestone;
+	public static Block oreTungstenGranite;
+
+	public static Block oreMagnetiteStone;
+	public static Block oreMagnetiteBasalt;
+	public static Block oreMagnetiteLimestone;
+	public static Block oreMagnetiteGranite;
+
+	public static Block oreSilverStone;
+	public static Block oreSilverBasalt;
+	public static Block oreSilverLimestone;
+	public static Block oreSilverGranite;
+
+	public static Block oreLeadStone;
+	public static Block oreLeadBasalt;
+	public static Block oreLeadLimestone;
+	public static Block oreLeadGranite;
+
+	public static Block oreSiliconStone;
+	public static Block oreSiliconBasalt;
+	public static Block oreSiliconLimestone;
+	public static Block oreSiliconGranite;
+
+	public static Block oreChromeStone;
+	public static Block oreChromeBasalt;
+	public static Block oreChromeLimestone;
+	public static Block oreChromeGranite;
+
+	public static Block oreAnthraciteStone;
+	public static Block oreAnthraciteBasalt;
+	public static Block oreAnthraciteLimestone;
+	public static Block oreAnthraciteGranite;
+
+	public static Block oreTitaniumStone;
+	public static Block oreTitaniumBasalt;
+	public static Block oreTitaniumLimestone;
+	public static Block oreTitaniumGranite;
+
+	public static Block oreUraniniteStone;
+	public static Block oreUraniniteBasalt;
+	public static Block oreUraniniteLimestone;
+	public static Block oreUraniniteGranite;
+
+	public static Block oreRubyStone;
+	public static Block oreRubyBasalt;
+	public static Block oreRubyLimestone;
+	public static Block oreRubyGranite;
+
+	public static Block oreSapphireStone;
+	public static Block oreSapphireBasalt;
+	public static Block oreSapphireLimestone;
+	public static Block oreSapphireGranite;
+
+	public static Block oreEmeraldStone;
+	public static Block oreEmeraldBasalt;
+	public static Block oreEmeraldLimestone;
+	public static Block oreEmeraldGranite;
+
+	public static Block oreBoronStone;
+	public static Block oreBoronBasalt;
+	public static Block oreBoronLimestone;
+	public static Block oreBoronGranite;
+
+	public static Block orePlatinumStone;
+	public static Block orePlatinumBasalt;
+	public static Block orePlatinumLimestone;
+	public static Block orePlatinumGranite;
+
 
 	public static Block blockAluminum;
 	public static Block blockCopper;
@@ -247,6 +357,24 @@ public class NFCBlocks {
 			.setTextures("sandScorched.png")
 			.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 			.build(new BlockSandScorched("sand.scorched", blockID("sandScorched"), Material.sand));
+
+
+
+		oreAshNetherrack = ore
+			.setTextures("oreAshNetherrack.png")
+			.build(new BlockOreAsh("ore.ash.netherrack", blockID("oreAshNetherrack"), Material.stone));
+
+		oreGoldNetherrack = ore
+			.setTextures("oreGoldNetherrack.png")
+			.build(new BlockOreGold("ore.gold.netherrack", blockID("oreGoldNetherrack"), Material.stone));
+
+		oreOnyxNetherrack = ore
+			.setTextures("oreOnyxNetherrack.png")
+			.build(new BlockOreOnyx("ore.onyx.netherrack", blockID("oreOnyxNetherrack"), Material.stone));
+
+		oreUraniniteNetherrack = ore
+			.setTextures("oreUraniniteNetherrack.png")
+			.build(new BlockOreUraninite("ore.uraninite.netherrack", blockID("oreUraniniteNetherrack"), Material.stone));
 
 
 

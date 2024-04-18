@@ -27,6 +27,8 @@ public class NFCItems {
 	public static Item appleBismuth;
 	public static Item recordNostalgia;
 
+	public static Item oreRaw
+
 	public void initilizeItems() {
 		// Items
 		eggCooked = ItemHelper.createItem(MOD_ID,
