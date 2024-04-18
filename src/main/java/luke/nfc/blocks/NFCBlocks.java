@@ -194,7 +194,6 @@ public class NFCBlocks {
 	public static Block blockEmerald;
 	public static Block blockBoron;
 	public static Block blockPlatinum;
-	public static Block blockSteel;
 	public static Block blockOsmium;
 	public static Block blockOnyx;
 	public static Block blockBrass;
