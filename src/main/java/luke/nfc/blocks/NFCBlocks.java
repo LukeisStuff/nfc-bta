@@ -2,10 +2,7 @@ package luke.nfc.blocks;
 
 import luke.nfc.NFCConfig;
 import net.minecraft.client.render.block.model.BlockModelRenderBlocks;
-import net.minecraft.core.block.Block;
-import net.minecraft.core.block.BlockAxisAligned;
-import net.minecraft.core.block.BlockGlass;
-import net.minecraft.core.block.BlockSand;
+import net.minecraft.core.block.*;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.block.tag.BlockTags;
 import net.minecraft.core.sound.BlockSound;
@@ -114,6 +111,18 @@ public class NFCBlocks {
 			.setResistance(1.0f)
 			.setTags(BlockTags.MINEABLE_BY_PICKAXE, BlockTags.EXTENDS_MOTION_SENSOR_RANGE);
 
+		BlockBuilder brick = new BlockBuilder(MOD_ID)
+			.setBlockSound(new BlockSound("step.stone", "step.stone", 1.0f, 1.0f))
+			.setResistance(10.0f)
+			.setTags(BlockTags.MINEABLE_BY_PICKAXE);
+
+		BlockBuilder plant = new BlockBuilder(MOD_ID)
+			.setBlockSound(new BlockSound("step.grass", "step.grass", 1.0f, 1.0f))
+			.setHardness(0.0f)
+			.setResistance(0.0f)
+			.setBlockModel(new BlockModelRenderBlocks(1))
+			.setTags(BlockTags.MINEABLE_BY_SHEARS, BlockTags.BROKEN_BY_FLUIDS, BlockTags.PLANTABLE_IN_JAR);
+
 
 
 		pebble = new BlockBuilder(MOD_ID)
@@ -186,6 +195,44 @@ public class NFCBlocks {
 		windowDouble = glass
 			.setTextures("windowDouble.png")
 			.build(new BlockGlass("window.double", blockID("windowDouble"), Material.glass, false));
+
+
+
+		bricksFired = brick
+			.setTextures("bricksFired.png")
+			.build(new Block("brick.fired", blockID("bricksFired"), Material.stone));
+
+
+
+		mushroomBlue = plant
+			.setTextures("mushroomBlue.png")
+			.setLuminance(9)
+			.build(new BlockMushroomGlow("mushroom.blue", blockID("mushroomBlue")));
+
+		mushroomPurple = plant
+			.setTextures("mushroomPurple.png")
+			.setLuminance(9)
+			.build(new BlockMushroomGlow("mushroom.purple", blockID("mushroomPurple")));
+
+		mushroomGlow = plant
+			.setTextures("mushroomGlow.png")
+			.setLuminance(11)
+			.build(new BlockMushroom("mushroom.glow", blockID("mushroomGlow")));
+
+		mushroomFire = plant
+			.setTextures("mushroomFire.png")
+			.setLuminance(10)
+			.build(new BlockMushroomFire("mushroom.fire", blockID("mushroomFire")));
+
+		glowstoneBlue = new BlockBuilder(MOD_ID)
+			.setBlockSound(new BlockSound("step.gravel", "ran.gravel", 1.0f, 0.8f))
+			.setHardness(1.0f)
+			.setResistance(1.0f)
+			.setUseInternalLight()
+			.setLuminance(15)
+			.setTextures("glowstoneBlue.png")
+			.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+			.build(new BlockGlowStoneBlue("glowstone.blue", blockID("glowstoneBlue"), Material.stone));
 
 
 

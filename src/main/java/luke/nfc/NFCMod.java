@@ -1,6 +1,7 @@
 package luke.nfc;
 
 import luke.nfc.blocks.NFCBlocks;
+import luke.nfc.items.NFCItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +21,7 @@ public class NFCMod implements ModInitializer, GameStartEntrypoint, RecipeEntryp
 	public void beforeGameStart() {
 
 		new NFCBlocks().initializeBlocks();
-
+		new NFCItems().initilizeItems();
 	}
 
 	@Override
