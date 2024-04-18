@@ -123,10 +123,16 @@ public class NFCBlocks {
 			.setBlockModel(new BlockModelRenderBlocks(1))
 			.setTags(BlockTags.MINEABLE_BY_SHEARS, BlockTags.BROKEN_BY_FLUIDS, BlockTags.PLANTABLE_IN_JAR);
 
+		BlockBuilder ore = new BlockBuilder(MOD_ID)
+			.setBlockSound(new BlockSound("step.stone", "step.stone", 1.0f, 1.0f))
+			.setHardness(3.0f)
+			.setResistance(5.0f)
+			.setTags(BlockTags.MINEABLE_BY_PICKAXE);
+
 
 
 		pebble = new BlockBuilder(MOD_ID)
-			.setBlockSound(new BlockSound("step.gravel", "step.gravel", 1.0f, 0.8f))
+			.setBlockSound(new BlockSound("step.gravel", "step.gravel", 1.0f, 1.0f))
 			.setHardness(1.0f)
 			.setResistance(1.0f)
 			.setTextures("pebble.png")
@@ -225,7 +231,7 @@ public class NFCBlocks {
 			.build(new BlockMushroomFire("mushroom.fire", blockID("mushroomFire")));
 
 		glowstoneBlue = new BlockBuilder(MOD_ID)
-			.setBlockSound(new BlockSound("step.gravel", "ran.gravel", 1.0f, 0.8f))
+			.setBlockSound(new BlockSound("step.stone", "random.glass", 1.0f, 1.0f))
 			.setHardness(1.0f)
 			.setResistance(1.0f)
 			.setUseInternalLight()
@@ -233,6 +239,14 @@ public class NFCBlocks {
 			.setTextures("glowstoneBlue.png")
 			.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 			.build(new BlockGlowStoneBlue("glowstone.blue", blockID("glowstoneBlue"), Material.stone));
+
+		sandScorched = new BlockBuilder(MOD_ID)
+			.setBlockSound(new BlockSound("step.sand", "step.sand", 1.0f, 1.0f))
+			.setHardness(0.5f)
+			.setResistance(0.5f)
+			.setTextures("sandScorched.png")
+			.setTags(BlockTags.MINEABLE_BY_PICKAXE)
+			.build(new BlockSandScorched("sand.scorched", blockID("sandScorched"), Material.sand));
 
 
 
