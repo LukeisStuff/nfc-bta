@@ -21,7 +21,7 @@ public class BlockOreUraninite extends Block {
 				return new ItemStack[]{new ItemStack(this)};
 			case EXPLOSION:
 			case PROPER_TOOL:
-				return new ItemStack[]{new ItemStack(NFCItems.rawUranium)};
+				return new ItemStack[]{new ItemStack(NFCItems.oreRawUraninite)};
 			default:
 				return null;
 		}
